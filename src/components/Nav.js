@@ -1,9 +1,8 @@
 import Link from "next/link";
 
-export default function About() {
+export default function Nav() {
   return (
     <div>
-      <h1>About!</h1>
       <nav>
         <ul>
           <li>
@@ -11,6 +10,12 @@ export default function About() {
           </li>
           <li>
             <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
