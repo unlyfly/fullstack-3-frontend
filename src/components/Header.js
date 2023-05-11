@@ -4,23 +4,16 @@ import { Avatar, Box, Button } from "@mui/material";
 const Header = ({ src, title, children }) => {
   return (
     <header>
-      <Button
-        startIcon={<Avatar alt="logo" src={src} />}
-        sx={{
-          fontSize: "1.1rem",
-          color: "black",
-        }}
-      >
+      <Button startIcon={<Avatar alt="logo" src={src} />}
+        sx={{fontSize: "1.1rem", color: "black",}}>
         {title}
       </Button>
-      <Box
-        sx={{
+      <Box sx={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "flex-end",
           alignItems: "center",
-        }}
-      >
+        }}>
         {children}
       </Box>
     </header>
